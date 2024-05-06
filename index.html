@@ -1,0 +1,455 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Работа курьером | Стань курьером прямо сейчас и зарабатывай до 7000 рублей в день</title>
+    <meta name="description" content="Стань курьером прямо сейчас и зарабатывай до 7000 рублей в день" />
+    <meta property="og:url" content="http://#"/>
+    <meta property="og:title" content="Работа курьером | Стань курьером прямо сейчас и зарабатывай до 7000 рублей в день" />
+    <meta property="og:description" content="Стань курьером прямо сейчас и зарабатывай до 7000 рублей в день" />
+    <meta property="og:type" content="website"/>
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" sizes="16x16" type="image/png" href="img/favicon/favicon-16x16.png">
+    <link rel="icon" sizes="32x32" type="image/png" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" sizes="192x192" type="image/png" href="img/favicon/android-chrome-192x192.png">
+    <link rel="icon" sizes="512x512" type="image/png" href="img/favicon/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.7/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="menu-mobile">
+            <div class="overlay"></div>
+            <div class="menu-mobile_block">
+                <div class="menu-mobile_close">
+                    <img src="img/Close.svg" alt="close">
+                </div>
+                <a href="/" class="menu-mobile_title">
+                    <h2>СМАРТ</h2>
+                    <p>Курьерский центр №1</p>
+                </a>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#garant" class="nav_link">Преимущества</a></li>
+                        <li><a href="#working" class="nav_link">Этапы</a></li>
+                        <li><a href="#question" class="nav_link">FAQ</a></li>
+                    </ul>
+                </nav>
+                <div class="menu-mobile_wrap">
+                    <div class="menu-mobile_text"></div>
+                    <div class="icon_nav">
+                        <a href="#" target="_blank"><img src="./img/tg_icon.svg" alt="Telegram"></a>
+                        <a href="#" target="_blank"><img src="./img/Wh_icon.svg" alt="WhatsApp"></a>
+                    </div>
+                    <button type="button" class="head_btn" onclick="showForm()">Стать курьером</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="head_menu">
+                <h1>Курьерский <br> центр №1</h1>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#garant" class="nav_link">Приемущества</a></li>
+                        <li><a href="#working" class="nav_link">Этапы</a></li>
+                        <li><a href="#question" class="nav_link">FAQ</a></li>
+                    </ul>
+                </nav>
+                <div class="icon_nav">
+                    <a href="#" target="_blank"><img src="./img/tg_icon.svg" alt="Telegram"></a>
+                    <a href="#" target="_blank"><img src="./img/Wh_icon.svg" alt="WhatsApp"></a>
+                </div>
+                <div class="feedback">
+                    <a href="#">+7 (999) 999-99-99</a>
+                    <p>онлайн 24/7</p>
+                </div>
+                <button type="button" class="head_btn" onclick="showForm()">Стать курьером</button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="modal-form toggled">
+		<div class="form-body">
+			<div class="close">&#10006;</div>
+			<h2 id="modal__title">
+				Стать курьером!
+			</h2>
+			<p id="modal__p">
+				Оставьте заявку и вы сможете ознакомиться с обучением по работе курьером.
+			</p>
+			
+			<div class="input-group" id="main">
+				<input id="phone">
+				<input style="display: none" id="code" type="text" placeholder="Введите код"><br>
+				<button id="buttonCode" type="button" onclick="sendSms()" >Отправить код</button>
+				<button style="display: none" id="nexButton" onclick="ConfirmCode()" type="button">Продолжить</button>
+				<p id="messageDebug"></p>
+			</div>
+			<span>Нажимая на кнопку, вы соглашаетесь с 
+				<a class="policy" href="#" target="_blank">
+					Политика конфиденциальности
+				</a>
+			</span>
+		</div>
+	</div>
+    <main>
+        <div class="container">
+            <div class="main_wrapper">
+                <div class="main_text">
+                    <div>
+                        <h1 class="animate__animated">Стань курьером прямо сейчас и зарабатывай до 7000 рублей в день</h1>
+                        <p class="main_text_p">Доставляйте заказы из интернет-магазинов <br>
+                            и ресторанов и получайте ежедневные выплаты
+                        </p>
+                        <div class="main_btn_link" onclick="showForm()">
+                            <p>Стать курьером</p>
+                            <img src="./img/arrows_btn.svg">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="main_description">
+                            <div class="desc_ad">
+                                <p>Доставка <br> посылок</p>
+                            </div>
+                            <div class="desc_ad">
+                                <p>Свободный <br> график</p>
+                            </div>
+                            <div class="desc_ad">
+                                <p>Ежедневные <br> выплаты</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_img">
+                    <img style="background-size: cover;" src="./img/header_fon.png" style="max-width: 670px;" alt="FON">
+                    <div class="main_description">
+                        <div class="desc_ad">
+                            <p>Доставка <br> посылок</p>
+                        </div>
+                        <div class="desc_ad">
+                            <p>Свободный <br> график</p>
+                        </div>
+                        <div class="desc_ad">
+                            <p>Ежедневные <br> выплаты</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <section class="section_choise">
+        <div class="choise_fon"></div>
+        <div class="container">
+            <div class="choises_inner">
+                <div class="choises_item advantages band">
+                    <h1 class="animate__animated">Выбирайте сами</h1>
+                    <span>Почему мы?</span>
+                </div>
+                <div class="choises_item band">
+                    <p style="color: #B6B6B6;">[01]</p>
+                    <div class="choise_wrap">
+                        <h2>Сколько времени уделять доставке</h2>
+                        <p class="choise_text">Полный день или пару часов <br> после работы, или учебы</p>
+                    </div>
+                    <div class="arrow_next">
+                        <div class="arrows_item"><div></div></div>
+                    </div>
+                    <img src="img/choise_head.png" alt="head" class="choise_img">
+                </div>
+                <div class="choises_item band">
+                    <p style="color: #B6B6B6;">[02]</p>
+                    <div class="choise_wrap">
+                        <h2>Где доставлять</h2>
+                        <p class="choise_text">В удобном районе, где много <br> заказов, или по всему городу</p>
+                    </div>
+                    <div class="arrow_next band">
+                        <div class="arrows_item"><div></div></div>
+                    </div>
+                    <img src="img/choise_delivery.png" alt="delivery" class="choise_img">
+                </div>
+                <div class="choises_item band">
+                    <p style="color: #B6B6B6;">[03]</p>
+                    <div class="choise_wrap">
+                        <h2>Как доставлять</h2>
+                        <p class="choise_text">На автомобиле, велосипеде или пешком</p>
+                    </div>
+                    <div class="arrow_next">
+                        <div class="arrows_item"><div></div></div>
+                    </div>
+                    <img src="img/choise_car.png" alt="car" class="choise_img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_garant" id="garant">
+        <div class="container">
+            <div class="garant">
+                <div class="garant_decription">
+                    <div class="garant_item">
+                        <span>Преимущества</span>
+                    </div>
+                    <h1>Гарантированный ежедневный доход с Курьерским центром №1</h1>
+                    <div class="main_btn_link garant_btn" onclick="showForm()">
+                        <p>Стать курьером</p>
+                        <img src="./img/arrows_btn.svg">
+                    </div>
+                </div>
+                <div class="garant_cont">
+                    <div class="garant_card">
+                        <img src="./img/money_icon.svg" alt="">
+                        <p class="name_card">Высокий заработок</p>
+                        <p class="decrpition_card">Размер дохода зависит от количества выполненных заказов</p>
+                    </div>
+                    <div class="garant_card">
+                        <img src="./img/time_icon.svg" alt="">
+                        <p class="name_card">Оплата без задержек</p>
+                        <p class="decrpition_card">Своевременные ежедневные выплаты без дополнительных ожиданий</p>
+                    </div>
+                    <div class="garant_card">
+                        <img src="./img/rocket_icon.svg" alt="">
+                        <p class="name_card">Бонусы и акции</p>
+                        <p class="decrpition_card">Например, получи до 12000 ₽ за приглашение друга</p>
+                    </div>
+                    <div class="garant_card">
+                        <img src="./img/phone_icon.svg" alt="">
+                        <p class="name_card">Нужен только телефон</p>
+                        <p class="decrpition_card">Чтобы доставлять заказы, нужно только скачать приложение</p>
+                    </div>
+                    <div class="garant_card">
+                        <img src="./img/plus_icon.svg" alt="">
+                        <p class="name_card">Страховка на время выполнения заказа</p>
+                        <p class="decrpition_card">Страхуем вашу жизнь и здоровье</p>
+                    </div>
+                    <div class="garant_card">
+                        <img src="./img/eye_icon.svg" alt="">
+                        <p class="name_card">Без опыта работы</p>
+                        <p class="decrpition_card">Получите обучение и поддержку, даже если у вас нет предыдущего опыта</p>
+                    </div>
+                </div>
+                <div class="main_btn_link garant_btn-mobile" onclick="showForm()">
+                    <p>Стать курьером</p>
+                    <img src="./img/arrows_btn.svg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="parallax"></div>
+    <section class="section_working" id="working">
+        <div class="container">
+            <div class="choises_item" style="border: none;">
+                <h1 class="animate__animated">Как всё работает?</h1>
+                <span>Этапы трудоустройства</span>
+            </div>
+            <div class="work_count band">
+                <div class="work_step">
+                    <div class="work_step-wrap">
+                        <h1 class="animate__animated">1 шаг</h1>
+                    </div>
+                    <div class="work_step_txt">
+                        <h2>Отправьте заявку на регистрацию</h2>
+                        <p>Кликните на кнопку «Стать Курьером» заполните необходимые поля.</p>
+                    </div>
+                </div>
+                <div class="work_step">
+                    <div class="work_step-wrap">
+                        <h1 class="animate__animated">2 шаг</h1>
+                    </div>
+                    <div class="work_step_txt">
+                        <h2>Пройдите обучение в онлайн режиме</h2>
+                        <p>Обучение займет 5 минут. Вы научитесь работать с программой</p>
+                    </div>
+                </div>
+                <div class="work_step">
+                    <div class="work_step-wrap">
+                        <h1 class="animate__animated">3 шаг</h1>
+                    </div>
+                    <div class="work_step_txt">
+                        <h2>Пройдите онлайн-активацию</h2>
+                        <p>Мы проверим, как хорошо вы усвоили информацию из обучения</p>
+                    </div>
+                </div>
+                <div class="work_step">
+                    <div class="work_step-wrap">
+                        <h1 class="animate__animated">4 шаг</h1>
+                    </div>
+                    <div class="work_step_txt">
+                        <h2>Получите доступ в приложение</h2>
+                        <p>Готово! Выходите на линию, получайте заказы на доставку и зарабатывайте!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section class="section_question" id="question">
+        <div class="container">
+            <div style="color: #FCFCFC; border: none;" class="choises_item" style="border: none;">
+                <h1 class="animate__animated">Вопрос-ответ</h1>
+                <span>FAQ</span>
+            </div>
+
+            <div class="accor_inner">
+                <ul class="accordion">
+                    <li>
+                        <input type="radio" name="accordion" id="one" checked>
+                        <label for="one">У меня есть основная работа / учеба, можно на подработку?</span><span class="cross"></span></label>
+                        <div class="content_accordion">
+                            <p>Да! Можно работать в свободном графике, нет никаких обязательств. Выполняйте заказы в любое время: утром, днем, вечером, только по выходным или в свободное время. Час в день или даже 15 минут, 1 день в неделю или 7 — абсолютная свобода. Только вы решаете!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="accordion" id="two">
+                        <label for="two">Каким способом можно доставлять заказы?<span class="cross"></span></label>
+                        <div class="content_accordion">
+                            <p>Доставлять заказы можно любым способом: пешком либо на общественном транспорте, на велосипеде, самокате, мотоцикле или личном автомобиле. Во многих городах есть специальные условия на покупку или аренду велосипеда у наших партнеров, также для наших курьеров есть льготный шеринг самокатов от Яндекс GO с оплатой от 1₽/мин. Чем выше скорость доставки, тем выше доход!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="accordion" id="three">
+                        <label for="three">Можно получать выплаты ежедневно?<span class="cross"></span></label>
+                        <div class="content_accordion">
+                            <p>Да! Выплаты поступают каждый день на вашу банковскую карту.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="accordion" id="four">
+                        <label for="four">Нужны ли вложения для начала работы?<span class="cross"></span></label>
+                        <div class="content_accordion">
+                            <p>Нет! Можно начать сразу после оформления без каких-либо вложений и зарабатывать. Сумка для доставок выдается бесплатно, баланс в приложении также пополнять не нужно, чтобы начать выполнять заказы.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="accordion" id="five">
+                        <label for="five">Сколько заказов можно выполнить?<span class="cross"></span></label>
+                        <div class="content_accordion">
+                            <p>В среднем по статистике можно выполнять до 2-3 заказов в час в обычный день. Также в течение дня может возникать повышенный спрос, в это время заказов поступает больше и оплачиваются они дороже. Еще бывают мультизаказы: сначала получаете посылки с нескольких адресов, а потом доставляете, точек может быть вплоть до 6, такие заказы самые дорогие.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="accordion" id="six">
+                        <label for="six">Что нужно доставлять?<span class="cross"></span></label>
+                        <div class="content_accordion">
+                            <p>Зависит от сервиса, в который оформитесь. Пеших и курьеров на личном велосипеде / самокате оформляем в сервис Яндекс.Еда / Маркет Деливери: доставка в основном из ресторанов и магазинов. Яндекс.Лавка / Маркет15 (*доступно не во всех городах) — предоставляем велосипед: доставка продуктов, товаров для дома, небольших посылок с Яндекс.Маркета. Курьеров на личном автомобиле подключаем в сервис Яндекс.Доставка: доставлять нужно различные посылки от клиентов (например, документы, ключи и тд.), и корп. заказы с интернет-магазинов, которые сотрудничают с доставкой.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="accordion" id="seven">
+                        <label for="seven">Нужно ли одевать униформу?<span class="cross"></span></label>
+                        <div class="content_accordion">
+                            <p>Нет, специальная униформа не требуется, работайте в удобной одежде. Пешим и курьерам на велосипеде/самокате выдается только сумка для доставок — бесплатно.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="accordion" id="eight">
+                        <label for="eight">Какой смартфон подходит для работы?<span class="cross"></span></label>
+                        <div class="content_accordion">
+                            <p>Приложение для выполнения заказов доступно на Android и IOS.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="accordion" id="nine">
+                        <label for="nine">Каким способом происходит оформление?<span class="cross"></span></label>
+                        <div class="content_accordion">
+                            <p>Практически все курьеры оформляются самозанятыми. Это очень просто и быстро, нужно всего лишь пройти регистрацию в приложении "Мой Налог", это занимает 2 минуты, доход будет считаться официальным, а выплаты поступать ежедневно. Также быстро можно будет сняться со статуса самозанятого при прекращении сотрудничества. Также есть еще вариант оформления для курьеров на личном автомобиле — подключение через парк-партнера, это неофициальное оформление, условия выплат могут отличаться в разных парках, нужно уточнять индивидуально, но чаще всего также ежедневные выплаты, как и у самозанятых, также у парковых курьеров взимается комиссия с заказов.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="accordion" id="eleven">
+                        <label for="eleven">Можно ли выбрать район для работы?<span class="cross"></span></label>
+                        <div class="content_accordion">
+                            <p>Да, выйти на линию можно в любом доступном районе, даже рядом с домом, заказы поступают ближайшие к вашему текущему местоположению.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="accordion" id="twelve">
+                        <label for="twelve">Мне меньше 18, принимаете?<span class="cross"></span></label>
+                        <div class="content_accordion">
+                            <p>Да! Во многих городах принимаем курьеров с 16 лет, но не младше. Заполняйте анкету по кнопке "Стать курьером", указывайте свой город и возраст. Также потребуется письменное разрешение от родителей/опекунов для оформления несовершеннолетнего. Форма в памятке после обучения, либо вам отправит специалист. После оформления можно будет сразу работать.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="accordion" id="trhiteen">
+                        <label for="trhiteen">Могу ли стать курьером, если я не гражданин РФ?<span class="cross"></span></label>
+                        <div class="content_accordion">
+                            <p>Да! Во многих городах принимаем граждан стран СНГ, а также с иным гражданством. Заполняйте анкету по кнопке "Стать курьером", указывайте свой город и гражданство. Нужно иметь РВП/ВНЖ либо патент. Для автокурьеров требований по гражданству нет.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <button type="button" class="head_btn btn-fixed" onclick="showForm()">Стать курьером</button>
+
+    <footer>
+        <div class="container">
+            <div class="head_menu footer_menu">
+                <h1>Курьерский <br> центр №1</h1>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#garant" class="nav_link">Приемущества</a></li>
+                        <li><a href="#working" class="nav_link">Этапы</a></li>
+                        <li><a href="#question" class="nav_link">FAQ</a></li>
+                    </ul>
+                </nav>
+                <div class="icon_nav">
+                    <a href="#" target="_blank"><img src="./img/tg_icon.svg" alt="Telegram"></a>
+                    <a href="#" target="_blank"><img src="./img/Wh_icon.svg" alt="WhatsApp"></a>
+                </div>
+                <div class="feedback">
+                    <a href="#">+7 (999) 999-99-99</a>
+                    <p>онлайн 24/7</p>
+                </div>
+                <button type="button" class="head_btn" onclick="showForm()">Стать курьером</button>
+            </div>
+            <div class="icon_nav-mobile">
+                <a href="#" target="_blank"><img src="./img/tg_icon.svg" alt="Telegram"></a>
+                <a href="#" target="_blank"><img src="./img/Wh_icon.svg" alt="WhatsApp"></a>
+            </div>
+            <hr>
+            <a href="#" id="foot_link">Политика конфиденциальности</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.7/build/js/intlTelInput.min.js"></script>
+
+    <!-- Маска для телефона -->
+    <script>
+        const input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+            onlyCountries: ['ru', 'kz', 'by', 'kg', 'uz'],
+            showSelectedDialCode: true,
+            initialCountry: 'ru',
+            geoIpLookup: callback => {
+                fetch("https://ipapi.co/json")
+                .then(res => res.json())
+                .then(data => callback(data.country_code))
+                .catch(() => callback("us"));
+            },
+            countrySearch: false,
+            customPlaceholder: function(selectedCountryPlaceholder, selectedCountryData) {
+                return selectedCountryPlaceholder.slice(2);
+            },
+            strictMode: true,
+            utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.7/build/js/utils.js",
+        });
+    </script>
+</body>
+</html>
